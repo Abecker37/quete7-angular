@@ -1,0 +1,10 @@
+<fieldset>
+    <h3>Name : {{developer.firstname}} {{developer.lastname}}</h3>
+    <p>Age : {{developer.age}} years old</p>
+    <p>Gender : {{developer.gender}} </p>
+    <p>Bio : {{developer.bio}}</p>
+
+    <div *ngFor="let skill of developer.skills">
+        <app-skill [skill]="skill"></app-skill>
+    </div>
+</fieldset> 
